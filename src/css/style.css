@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+.landingPage {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../components/img/lizandra-rodriguez-6d2K4jpW1L8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.filter {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.hamContainer {
+  cursor: pointer; }
+  .hamContainer div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out; }
+  .hamContainer div:not(:last-child) {
+    margin-bottom: 8px; }
+  .hamContainer.active div:nth-child(2) {
+    opacity: 0; }
+  .hamContainer.active div:first-child {
+    transform: rotate(45deg);
+    transform-origin: center left; }
+  .hamContainer.active div:last-child {
+    transform: rotate(-45deg);
+    transform-origin: center left; }
+
+nav .logo {
+  font-size: 35px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+  letter-spacing: 1.5px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  align-items: center; }
+
+.landingPageContent {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 8%; }
+  .landingPageContent .heading {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px 5px black; }
+  .landingPageContent .moreInfo {
+    background: none;
+    border: 0.5px solid white;
+    padding: 20px 30px;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    transition: all 0.25s ease-in-out; }
+    .landingPageContent .moreInfo:hover {
+      background-color: white;
+      color: #616060; }
+
+.navbarPanel {
+  display: none;
+  width: 20%;
+  height: 70vh;
+  background-color: white;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black; }
+  .navbarPanel a {
+    text-decoration: none; }
+  .navbarPanel ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .navbarPanel ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      font-weight: 500; }
+    .navbarPanel ul li:not(:first-child) {
+      margin-top: 20px; }
+
+.welcomeContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row; }
+
+@media (max-width: 1000px) {
+  .welcomeContainer {
+    flex-direction: column; } }
+.welcomeLeftSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 1000px) {
+    .welcomeLeftSide {
+      flex: 100%; } }
+  .welcomeLeftSide img {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+.welcomeRightSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .welcomeRightSide .rightSideContent {
+    width: 80%; }
+    .welcomeRightSide .rightSideContent .welcomeTitle {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-family: 'Abril Fatface', cursive; }
+      @media (max-width: 1000px) {
+        .welcomeRightSide .rightSideContent .welcomeTitle {
+          font-size: 28px; } }
+    .welcomeRightSide .rightSideContent .welcomeDesc {
+      font-family: "Mukta Mahee", Arial, Helvetica, sans-serif;
+      color: #6c757d;
+      line-height: 1.8;
+      font-size: 18px;
+      font-weight: 300;
+      width: 85%; }
+    .welcomeRightSide .rightSideContent .playIcon {
+      cursor: pointer;
+      margin-top: 30px; }
+      .welcomeRightSide .rightSideContent .playIcon i {
+        border: 1px solid #a9b7c3;
+        padding: 15px;
+        padding-left: 20px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #3fa0b2; }
+      .welcomeRightSide .rightSideContent .playIcon span {
+        font-size: 25px;
+        font-weight: 900;
+        margin-left: 20px;
+        color: #3fa0b2; }
+
+.objectiveContainer {
+  min-height: 120vh;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px; }
+  .objectiveContainer .objectiveHeading {
+    margin-top: 40px;
+    text-align: center; }
+    .objectiveContainer .objectiveHeading .title {
+      font-size: 2rem;
+      margin: 10px 0px;
+      font-family: 'Abril Fatface', cursive; }
+    .objectiveContainer .objectiveHeading .desc {
+      width: 60%;
+      margin: auto;
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #6c757d; }
+  .objectiveContainer .objectivesElement .container {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .objectiveContainer .objectivesElement .container div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 30%; }
+      .objectiveContainer .objectivesElement .container div img {
+        width: 30%;
+        height: 30%;
+        margin: 20px; }
+      .objectiveContainer .objectivesElement .container div .title {
+        font-size: 1.75rem;
+        font-family: "Arbil Fatface",'Times New Roman', Times, serif;
+        font-weight: 700; }
+      .objectiveContainer .objectivesElement .container div .desc {
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+        color: #6c757d;
+        font-weight: 200;
+        font-size: 18px; }
+      @media (max-width: 1000px) {
+        .objectiveContainer .objectivesElement .container div {
+          flex: 40%; }
+          .objectiveContainer .objectivesElement .container div .desc {
+            font-size: 16px; } }
+      @media (max-width: 760px) {
+        .objectiveContainer .objectivesElement .container div {
+          flex: 100%; } }
+
+.tourMainPage {
+  min-height: 100vh;
+  padding-top: 80px; }
+  .tourMainPage .tourHeadingContent {
+    margin: auto;
+    width: 100%;
+    text-align: center; }
+    .tourMainPage .tourHeadingContent .title {
+      font-size: 70px;
+      font-family: "Abril Fatface", times, serif;
+      font-weight: 500;
+      margin-bottom: 20px; }
+      @media (max-width: 991px) {
+        .tourMainPage .tourHeadingContent .title {
+          font-size: 40px; } }
+    .tourMainPage .tourHeadingContent .desc {
+      width: 75%;
+      margin: auto;
+      color: #6c757d;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.8; }
+      @media (max-width: 991px) {
+        .tourMainPage .tourHeadingContent .desc {
+          width: 96%; } }
+  .tourMainPage .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .tourMainPage .slider .sliderContainer {
+      margin-top: 50px;
+      width: 80%;
+      height: auto; }
+      .tourMainPage .slider .sliderContainer img {
+        width: 100%;
+        height: 100%; }
+
+.topDestinationsMainPage {
+  min-height: 100vh; }
+  .topDestinationsMainPage .topDestinationsHeader {
+    padding-top: 70px;
+    text-align: center; }
+    .topDestinationsMainPage .topDestinationsHeader .title {
+      font-size: 2rem;
+      font-family: "Abril Fatface", times, serif; }
+    .topDestinationsMainPage .topDestinationsHeader .desc {
+      width: 50%;
+      margin: auto;
+      font-size: 20px;
+      color: #6c757d;
+      font-weight: 300;
+      line-height: 1.7; }
+      @media (max-width: 767px) {
+        .topDestinationsMainPage .topDestinationsHeader .desc {
+          font-size: 16px;
+          width: 70%; } }
+  .topDestinationsMainPage .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto; }
+    .topDestinationsMainPage .cardsContainer .destinationCard {
+      flex: 20%;
+      margin: 30px; }
+      .topDestinationsMainPage .cardsContainer .destinationCard img {
+        width: 100%;
+        height: 60%;
+        box-shadow: 5px 5px 10px lightgray; }
+      .topDestinationsMainPage .cardsContainer .destinationCard .cardTitle {
+        font-family: "Abril Fatface", times, serif;
+        font-size: 20px;
+        margin-top: 10px; }
+      .topDestinationsMainPage .cardsContainer .destinationCard .rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .topDestinationsMainPage .cardsContainer .destinationCard .rating .stars {
+          color: #3fa0b2;
+          font-size: 15px; }
+          .topDestinationsMainPage .cardsContainer .destinationCard .rating .stars i:not(:first-of-type) {
+            margin-left: 5px; }
+        .topDestinationsMainPage .cardsContainer .destinationCard .rating .reviews {
+          color: lightgrey;
+          font-style: italic;
+          font-size: 18px; }
+    @media (max-width: 1000px) {
+      .topDestinationsMainPage .cardsContainer {
+        flex-wrap: wrap; }
+        .topDestinationsMainPage .cardsContainer .destinationCard {
+          flex: 40%; } }
+    @media (max-width: 767px) {
+      .topDestinationsMainPage .cardsContainer {
+        flex-direction: column; }
+        .topDestinationsMainPage .cardsContainer .destinationCard {
+          flex: 50%; } }
+
+.happyCustomers {
+  min-height: 100vh;
+  background-color: #FAFAFA; }
+  .happyCustomers .happyCustomerHeader {
+    font-size: 70px;
+    font-family: "Abril Fatface", times, serif;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center; }
+    @media (max-width: 900px) {
+      .happyCustomers .happyCustomerHeader {
+        font-size: 40px; } }
+  .happyCustomers .customersContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .happyCustomers .customersContainer div {
+      flex: 30%; }
+      .happyCustomers .customersContainer div img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px; }
+      .happyCustomers .customersContainer div .comment {
+        line-height: 1.5;
+        font-size: 20px;
+        font-style: italic;
+        font-family: 'Mukta Mahee',Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        width: 90%; }
+    @media (max-width: 900px) {
+      .happyCustomers .customersContainer {
+        width: 80%; }
+        .happyCustomers .customersContainer div {
+          flex: 80%;
+          margin-bottom: 20px; } }
+
+.footerContainer {
+  min-height: 80vh;
+  background-color: #1A1A1A;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-top: 50px; }
+  .footerContainer .contentContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: auto; }
+    .footerContainer .contentContainer .title {
+      color: white;
+      font-size: 20px;
+      font-family: "Abril Fatface", times, serif; }
+    .footerContainer .contentContainer ul {
+      list-style: none; }
+      .footerContainer .contentContainer ul li {
+        margin-bottom: 20px; }
+        .footerContainer .contentContainer ul li a {
+          color: rgba(255, 255, 255, 0.7);
+          font-family: "Mukta Mahee", arial, sans-serif;
+          font-weight: 200;
+          font-size: 18px; }
+    .footerContainer .contentContainer .supTitle {
+      font-style: italic;
+      color: white;
+      text-transform: capitalize;
+      font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 18px; }
+    .footerContainer .contentContainer .address {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+      width: 60%; }
+    .footerContainer .contentContainer .phone {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 18px; }
+    .footerContainer .contentContainer .email {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 18px; }
+    .footerContainer .contentContainer .newsLetter {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 18px; }
+    .footerContainer .contentContainer .newsLetterInput {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      background: transparent;
+      width: 80%; }
+      .footerContainer .contentContainer .newsLetterInput::placeholder {
+        font-style: italic; }
+    .footerContainer .contentContainer i {
+      color: white;
+      margin-left: -20px; }
+    .footerContainer .contentContainer div {
+      flex: 30%; }
+    @media (max-width: 900px) {
+      .footerContainer .contentContainer {
+        flex-direction: column;
+        width: 80%;
+        padding: 30px; }
+        .footerContainer .contentContainer .input {
+          width: 80%; } }
+
+* {
+  margin: 0px;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Mukta Mahee', sans-serif; }
+
+.desp {
+  display: block; }
+
+.carousel {
+  width: 100%;
+  /* Or try to use important */
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+.hotelHeader {
+  min-height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .hotelHeader .hotelHeaderContent {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(29, 27, 68, 0.3); }
+  .hotelHeader .Title {
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: "Abril Fatface", times, serif;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 50px; }
+
+.familyRoom {
+  display: flex;
+  flex-direction: row; }
+  .familyRoom .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .familyRoom .left img {
+      width: 90%;
+      margin: auto;
+      height: 80%; }
+  .familyRoom .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px; }
+    .familyRoom .right .title {
+      font-size: 40px;
+      font-family: "Abril Fatface", times, serif;
+      font-weight: 500; }
+    .familyRoom .right .desc {
+      width: 60%;
+      color: #6c757d;
+      font-family: "Mukta Mahee", Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      line-height: 1.8;
+      font-size: 18px; }
+    .familyRoom .right .learnMoreBtn {
+      width: 150px;
+      padding: 10px;
+      border-style: none;
+      border: 2px solid #65c0ba;
+      border-radius: 5px;
+      background-color: white;
+      color: #212529;
+      letter-spacing: 0.2em;
+      font-size: 15px; }
+  @media (max-width: 1000px) {
+    .familyRoom {
+      flex-direction: column; }
+      .familyRoom .right {
+        justify-content: center;
+        align-items: center;
+        padding: 30px; } }
+  @media (max-width: 500px) {
+    .familyRoom .right .desc {
+      width: 90%; } }
+
+.pRoom {
+  display: flex;
+  flex-direction: row; }
+  .pRoom .left {
+    padding-top: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .pRoom .left .title {
+      font-size: 40px;
+      font-family: "Abril Fatface", times, serif;
+      font-weight: 500;
+      width: 60%;
+      text-align: center; }
+    .pRoom .left .desc {
+      width: 60%;
+      color: #6c757d;
+      font-family: "Mukta Mahee", Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      line-height: 1.8;
+      font-size: 18px; }
+    .pRoom .left .pRoomBtn {
+      width: 150px;
+      padding: 10px;
+      border-style: none;
+      border: 2px solid #65c0ba;
+      border-radius: 5px;
+      background-color: white;
+      color: #212529;
+      letter-spacing: 0.2em;
+      font-size: 15px; }
+  .pRoom .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pRoom .right img {
+      width: 90%;
+      margin: auto;
+      height: 80%; }
+  @media (max-width: 1000px) {
+    .pRoom {
+      flex-direction: column-reverse; }
+      .pRoom .left {
+        justify-content: center;
+        align-items: center;
+        padding: 30px; } }
+  @media (max-width: 500px) {
+    .pRoom .left .desc {
+      width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */

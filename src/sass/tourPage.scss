@@ -1,0 +1,77 @@
+.tourMainPage{
+   min-height: 100vh;
+    padding-top: 80px;
+    // background-color: red;
+    .tourHeadingContent{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        .title{
+            font-size: 70px;
+            font-family: "Abril Fatface", times, serif;
+            font-weight: 500;
+            margin-bottom: 20px;
+            @media(max-width:991px){
+              &{
+                  font-size: 40px;
+              }
+            }
+        }
+        .desc{
+            width:75%;
+            margin: auto;
+            color:$textColor;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.8;
+            @media (max-width:991px) {
+                &{
+                    width:96%;
+                }
+            }
+        }
+    }
+    .slider{
+     
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sliderContainer{
+          margin-top:50px;
+             width: 80%;
+           height: auto;
+        // background-color: blue;
+        // padding:20px;
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+       
+    }
+}
+
+
+// test
+// .skewBackground{
+//     height: 40vh;
+//     width:100%;
+//     background-color: lightblue;
+//     z-index: -100;
+//      margin-top: -20%;
+//      position: absolute;
+//     transform: skewY(-10deg);  
+// }
+// .skewBackgroundCon{
+//     height: 50vh;
+//     width: 100%;
+//     background-color: lightblue;
+//     position: absolute;
+//     z-index: -10;
+//     margin-top: -10%;
+    
+
+// }

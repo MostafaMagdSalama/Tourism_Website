@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0;
+    outline: none;
+  
+    box-sizing: border-box;
+ 
+}
+body{
+    font-family:'Mukta Mahee', sans-serif;
+}
+.desp{
+    display: block;
+}
+.carousel {
+    width:100%; /* Or try to use important */
+    height:100%;
+  }
+  .carousel-inner{
+      height: 100%;
+  }

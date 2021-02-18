@@ -1,0 +1,87 @@
+@mixin custom(){
+    color:rgba(255, 255, 255,0.7);
+    font-family:'Mukta Mahee', Arial, Helvetica, sans-serif;
+    font-weight:200;
+    font-size:18px;
+}
+.footerContainer{
+    min-height: 80vh;
+    background-color:#1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top:50px;
+    .contentContainer{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+         margin:auto;
+     
+        .title{
+                color:white;
+                font-size: 20px;
+                font-family: "Abril Fatface", times, serif;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom:20px;
+                a{
+                    color:rgba(255, 255, 255,0.7);
+                    font-family:"Mukta Mahee", arial, sans-serif;
+                    font-weight:200;
+                    font-size:18px;
+                    
+                }
+            }
+        }
+        .supTitle{
+            font-style: italic;
+            color:white;
+            text-transform: capitalize;
+            font-family: 'Mukta Mahee', Arial, Helvetica, sans-serif;
+            font-weight:200;
+            font-size:18px;
+        }
+        .address{
+            @include custom();
+            width:60%;
+        }
+        .phone{
+            @include custom();
+        }
+        .email{
+            @include custom();
+        }
+        .newsLetter{
+            @include custom();
+        }
+        .newsLetterInput{
+            border:none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            padding: 10px;
+            background:transparent; 
+            width:80%;
+            &::placeholder{
+                font-style:italic;
+            }
+        }
+        i{
+            color:rgb(255,255,255);
+            margin-left:-20px;
+        }
+    
+        div{
+            flex:30%;
+        }
+        @media(max-width: 900px){
+            flex-direction: column;
+            width:80%;
+            padding:30px;
+            .input{
+                width:80%;
+            }
+        }
+    }
+
+}

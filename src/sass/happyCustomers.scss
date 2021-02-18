@@ -1,0 +1,59 @@
+.happyCustomers{
+    min-height:100vh ;
+    background-color: #FAFAFA;
+    .happyCustomerHeader{
+        font-size: 70px;
+        font-family: $headerFontFamily;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        text-align: center;
+        @media(max-width: 900px){
+            &{
+                font-size:40px;
+               
+            }
+        }
+       
+    }
+    .customersContainer{
+        width:90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     
+        div{
+            flex:30%;
+            // margin:30px;
+       
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            .comment{
+                line-height: 1.5;
+                font-size: 20px;
+                font-style: italic;
+                font-family:'Mukta Mahee',Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                width:90%;
+            }
+         
+          
+        }
+        @media(max-width:900px){
+            &{
+                width:80%;
+            div{
+                flex:80%;
+                margin-bottom: 20px;
+                
+            }
+
+        }
+    }
+
+    }
+}
